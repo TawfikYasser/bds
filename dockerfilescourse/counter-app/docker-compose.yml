@@ -1,0 +1,26 @@
+version: '3.5'
+services:
+  web-fe: #first service
+    build: .
+    command: python app.py
+    container_name: web-fe
+    ports: #port mapping
+      - target: 5000
+        published: 5000 
+    networks:
+      - frontend-net
+      - backend-net
+    volumes:
+      - type: volume
+        source: counter-vol
+        target: /code
+  redis: #second service
+    image: 'redis:alpine'
+    networks:
+      backend-net:
+networks:
+  frontend-net: # for web-fe
+  backend-net: # for redis
+    internal: true # not for the internet
+volumes:
+  counter-vol:

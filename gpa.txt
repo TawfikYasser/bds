@@ -1,0 +1,12 @@
+Amgad 10 2020 First CS401 3 5 4
+Ahmed 20 2020 First CS401 3 5 3
+Ali 30 2020 First CS401 3 5 3.5
+Mona 40 2020 First CS401 3 5 4.5
+Amgad 10 2020 First CS402 3 5 4.5
+Ahmed 20 2020 First CS402 3 5 2.5
+Ali 30 2020 First CS402 3 5 3
+Mona 40 2020 First CS402 3 5 4
+Amgad 10 2020 First CS403 3 5 3.5
+Ahmed 20 2020 First CS403 3 5 4.5
+Ali 30 2020 First CS403 3 5 4
+Mona 40 2020 First CS403 3 5 2
