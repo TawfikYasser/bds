@@ -14,12 +14,13 @@ telnet localhost 2181
 
 # Kafka Installation
 
-rm closer.cgi\?path\=%2Fkafka%2F3.1.0%2Fkafka_2.12-3.1.0.tgz
+sudo wget https://dlcdn.apache.org/kafka/3.2.0/kafka_2.13-3.2.0.tgz
 tar -xzvf kafka_2.12-3.1.0.tgz
 mv kafka_2.12-3.1.0 kafka
 mkdir kafka-logs
 export JAVA_HOME
-./kafka/bin/kafka-server-start.sh -daemon /home/tawfik/Softy/kafka/config/server.properties
+cd kafka/bin
+./kafka-server-start.sh /home/tawfik/Apps/kafka/config/server.properties
 ./kafka/bin/kafka-topics.sh --create --bootstrap-server localhost:9092 --replication-factor 1 --partitions 1 --topic test
 ./kafka/bin/kafka-topics.sh --bootstrap-server localhost:9092 --describe --topic test
 ./kafka/bin/kafka-console-producer.sh --broker-list localhost:9092 --topic test
