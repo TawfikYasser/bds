@@ -10,6 +10,13 @@ sudo sh get-docker.sh
  # Before persmissions 
  sudo dokcer info
  
+ # for Manjaro
+ $ sudo pacman -Syu
+ $ sudo pacman -S docker
+$ sudo systemctl start docker.service
+$ sudo systemctl enable docker.service
+$ sudo docker version
+ 
  # Check groups
  
  sudo getent group
